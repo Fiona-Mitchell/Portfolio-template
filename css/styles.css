@@ -41,8 +41,6 @@ h2{
 a {
   color: #FF7477;
   text-decoration: none;
-  height: 100px;
-  width:50px;
 }
 
 body{
@@ -401,7 +399,7 @@ img {vertical-align: middle;}
 ---------------------*/
 .about{
   text-align: center;
-  padding: 100px 0 80px 0;
+  padding: 160px 0 80px 0;
 }
 
 .about h3, .about a{
@@ -425,7 +423,9 @@ img {vertical-align: middle;}
   font-style: normal;
   font-weight: 500;
   color: black;
-  margin: 20px 80px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-me {
@@ -513,6 +513,43 @@ img {vertical-align: middle;}
 
 .cv p{
   text-align: left;
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 
 /* Contact
