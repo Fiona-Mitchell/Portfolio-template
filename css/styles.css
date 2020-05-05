@@ -38,6 +38,22 @@ h2{
   font-weight: 700;
 }
 
+
+h3{
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+p{
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
 a {
   color: #FF7477;
   text-decoration: none;
@@ -62,21 +78,6 @@ ul{
     padding: 10px 30px 10px 20px;
     border-bottom: solid 1px;
     color: white;
-}
-
-p{
-  padding: 0 30px 0 30px;
-  text-align: justify;
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-
-h3{
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 400;
 }
 
 
@@ -312,8 +313,8 @@ li a {
 
 }
 
-.portfolio-display img{
-    overflow-x: hidden;
+.portfolio-display h3, .portfolio-display p{
+    padding: 0 20px 0 20px;
 
 }
 
@@ -389,6 +390,29 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+.button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+  .shop {
+  background-color: #DAE3E5;
+  color: #FF7477;
+  border: 2px solid #FF7477;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.shop:hover {background-color: #e7e7e7;}
+
+
 /* Creative
 ---------------------*/
 .creative{
@@ -424,7 +448,6 @@ img {vertical-align: middle;}
   font-weight: 200;
   font-size: 22px;
   color: black;
-  margin: 20px 80px;
 }
 
 .about h1{
@@ -438,7 +461,6 @@ img {vertical-align: middle;}
   text-align: center;
   font-family: futura-pt-condensed, sans-serif;
   font-style: normal;
-  font-weight: 500;
   color: black;
   width: 250px;
   margin-left: auto;
@@ -573,7 +595,7 @@ span:hover:after {
 ---------------------*/
 
   footer{
-    padding:20px 0 20px 0;
+    padding:100px 0 20px 0;
     text-align: center;
     font-style: normal;
     font-weight: 300;
