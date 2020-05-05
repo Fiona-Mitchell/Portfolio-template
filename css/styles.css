@@ -12,7 +12,9 @@ COLOR PALETTE
 ------------------------------------*/
 html {
   box-sizing: border-box;
-  font-family: 'Athiti', sans-serif;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   line-height: 30px;
   background-color: #DAE3E5;
   }
@@ -25,11 +27,15 @@ html {
 h1{
   text-align: center;
   font-size: 25px;
+  font-style: bold;
 }
 
 h2{
   text-align: center;
-  font-size: 18px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 a {
@@ -63,6 +69,16 @@ ul{
 p{
   padding: 0 30px 0 30px;
   text-align: justify;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+h3{
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 /* Nav bar
 ---------------------*/
@@ -74,7 +90,7 @@ li a {
 }
 
 .logo{
-  margin: 20px 0 20px 0;
+  margin: 100px 0 20px 0;
 }
 
 .logo img{
@@ -388,23 +404,49 @@ img {vertical-align: middle;}
   padding: 100px 0 80px 0;
 }
 
-.about h3, .about p, .about a, .about h1{
-  text-align: center;
-  font-size: 35px;
+.about h3, .about a{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
   color: black;
+  margin: 20px 80px;
+}
+
+.about h1{
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.about p{
+  text-align: center;
+  font-family: futura-pt-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+  margin: 20px 80px;
 }
 
 .about-me {
   max-width: 100%;
   width: 100%;
   margin: 0 20px;
-  padding: 60px 50px 20px 50px;
+  padding: 60px 100px 20px 50px;
   display: inline-block;
+}
+
+.about-me h2{
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .about-me img{
   float:left;
-  margin: 30px 40px 80px;
+  margin: 30px 40px 40px;
 }
 .icon-display{
   padding: 10px 150px 10px 150px;
@@ -437,13 +479,51 @@ img {vertical-align: middle;}
 .connect-social{
   text-align: center;
 }
+
+
+.about-column {
+  float: left;
+}
+
+.about-column h2 {
+  padding: 0 20px 0 30px;
+  text-align: left;
+}
+
+.left {
+  width: 33.3%;
+  padding: 0 20px 0 50px;
+}
+
+.middle {
+  width: 33.3%;
+  padding: 0 20px 0 65px;
+}
+
+.right {
+  width: 33.3%;
+  padding: 0 20px 0 50px;
+}
+
+.about-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cv p{
+  text-align: left;
+}
+
 /* Contact
 ---------------------*/
 
   footer{
     padding:20px 0 20px 0;
     text-align: center;
-    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
 
   .contact{
