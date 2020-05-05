@@ -78,6 +78,11 @@ h3{
   font-style: normal;
   font-weight: 400;
 }
+
+
+img{
+  overflow-x: hidden;
+}
 /* Nav bar
 ---------------------*/
 
@@ -243,7 +248,6 @@ li a {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #9Fc2CC;
 }
 .icon-overlay {
   position: absolute;
@@ -259,7 +263,7 @@ li a {
 }
 
 .container:hover .overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .container:hover .icon-overlay {
@@ -267,8 +271,15 @@ li a {
 }
 
 .text {
-  color: white;
-  font-size: 25px;
+  color: #FF7477;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+  padding: 0 20px 0 20px;
+  font-size: 18px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -300,6 +311,12 @@ li a {
   }
 
 }
+
+.portfolio-display img{
+    overflow-x: hidden;
+
+}
+
 
 /* Portfolio
 ---------------------*/
