@@ -156,7 +156,7 @@ li a {
 .column-1 {
  float: left;
  align-items: center;
- width: 50%;
+ width: 100%;
  padding: 20px 0;;
 }
  .column-2 {
@@ -472,6 +472,21 @@ img {vertical-align: middle;}
   height: 680px;
   background-repeat: no-repeat;
   top: -30px;
+}
+
+
+/* Sketches
+---------------------*/
+
+.sketches{
+  background-image: url(../images/sketch/sketch-2.jpg);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  height: 680px;
+  background-repeat: no-repeat;
+  top: -100px;
 }
 
 
