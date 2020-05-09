@@ -460,6 +460,22 @@ img {vertical-align: middle;}
   margin: 0 150px 0 150px;
 }
 
+/* Fashion - editorial
+---------------------*/
+
+.editorial{
+  background-image: url(../images/editorial/background-2.jpg);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  height: 680px;
+  background-repeat: no-repeat;
+  top: -30px;
+}
+
+
+
 
 /* Creative
 ---------------------*/
