@@ -489,6 +489,20 @@ img {vertical-align: middle;}
   top: -100px;
 }
 
+/* Osier
+---------------------*/
+
+.osier{
+  background-image: url(../images/osier/sketch-4.jpg);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  height: 680px;
+  background-repeat: no-repeat;
+  top: -100px;
+}
+
 
 
 
