@@ -75,6 +75,15 @@ ul{
   height: 60px;
   z-index: 1;
 }
+ol{
+  margin: 0 20px;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 .top-bar ul{
     display: flex;
     justify-content: space-between;
@@ -363,6 +372,21 @@ li a {
 
 .portfolio-display{
   margin: 0 100px;
+}
+
+.headers{
+  margin-top: 40px;
+}
+
+.anna{
+  background-image: url(../images/ux/anna-background.jpg);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  margin: 0 0 180px 0;
+  height: 580px;
+  background-repeat: no-repeat;
+  top: -30px;
 }
 
 /* Fashion
