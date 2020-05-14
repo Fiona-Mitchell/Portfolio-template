@@ -339,23 +339,30 @@ li a {
 
 }
 
-.portfolio-display h3, .portfolio-display p{
-    padding: 0 20px 0 20px;
-
-}
-
-
 /* Portfolio
 ---------------------*/
 
 .portfolio{
-  background-image: url(../images/mountain-sunset-3.jpg);
+  background-image: url(../images/placer.jpg);
   background-size: 100%;
   z-index: 1;
   position: relative;
   padding: 0;
   height: 300px;
   background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.column-portfolio {
+ float: left;
+ align-items: center;
+ width: 50%;
+ padding: 10px 10px;
+ margin: 0;
+}
+
+.portfolio-display{
+  margin: 0 100px;
 }
 
 /* Fashion
