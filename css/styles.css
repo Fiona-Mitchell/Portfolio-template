@@ -389,6 +389,17 @@ li a {
   top: -30px;
 }
 
+.aaroe{
+  background-image: url(../images/ux/aaroe-background.jpg);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  margin: 0 0 180px 0;
+  height: 680px;
+  background-repeat: no-repeat;
+  top: -30px;
+}
+
 /* Fashion
 ---------------------*/
 .fashion{
