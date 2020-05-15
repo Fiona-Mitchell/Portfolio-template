@@ -114,6 +114,11 @@ ol{
 img{
   overflow-x: hidden;
 }
+
+.info-pages{
+  margin: 0 50px;
+}
+
 /* Nav bar
 ---------------------*/
 
@@ -166,7 +171,7 @@ li a {
  float: left;
  align-items: center;
  width: 100%;
- padding: 20px 0;;
+ padding: 10px 0 40px;
 }
  .column-2 {
   float: left;
@@ -400,6 +405,16 @@ li a {
   top: -30px;
 }
 
+.connect{
+  background-image: url(../images/ux/connect.png);
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  margin: 0 0 160px 0;
+  height: 580px;
+  background-repeat: no-repeat;
+  top: -30px;
+}
 /* Fashion
 ---------------------*/
 .fashion{
