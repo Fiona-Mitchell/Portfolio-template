@@ -17,8 +17,13 @@ html {
   font-weight: 300;
   line-height: 30px;
   background-color: #DAE3E5;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   }
+
+body{
+  overflow-x: hidden;
+  position: relative;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -33,6 +38,7 @@ h1{
   font-family: 'Nanum Myeongjo', serif;
   letter-spacing: 2px;
   font-weight: 500;
+  color:#283044;
 }
 
 
@@ -122,6 +128,7 @@ nav{
 
 .nav-links li{
   list-style: none;
+  color: white;
 }
 
 .nav-links a{
@@ -131,36 +138,84 @@ nav{
 
 .burger div{
 width: 25px;
-height: 30px;
+height: 3px;
 border-radius: 10%;
 background-color: white;
-margin 5px;
+margin: 5px;
+transition: all 0.5s ease;
 }
 
 .burger{
   display: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 650px){
+
+body{
+  overflow-x: hidden;
+}
+
+span{
+  display: none;
+}
 .nav-links{
   position: absolute;
   right:0;
   height: 45vh;
   top: 8vh;
-  background-color: #283044;
+  background-color: #DAE3E5;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
 }
 
 .nav-links h1{
   display: none;
 }
 
+.mobile-title{
+  display: flex;
 }
 
+.nav-links li{
+  opacity: 0;
+}
 
+.burger{
+  display: block;
+}
+}
+
+.nav-active{
+  transform:translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 /* Background colour & images
 ---------------------*/
 
@@ -792,13 +847,13 @@ padding: 50px 0;
   text-align: left;
 }
 
-span {
+nav a, .strike a {
   position: relative;
   display: block;
   cursor: pointer;
 }
 
-span:before, span:after {
+nav a:before, nav a:after, .strike a:before, .strike a:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -808,22 +863,22 @@ span:before, span:after {
   background: #fff;
 }
 
-span:before {
+nav a:before, .strike a:before {
   left: -2.5px;
 }
-span:after {
+nav a:after, .strike a:after {
   right: 2.5px;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
+nav a:hover:before, .strike a:hover:before {
   background: #fff;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after {
+nav a:hover:after, .strike a:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
@@ -853,6 +908,7 @@ span:hover:after {
   .about-row {
     padding: 0 10vw;
   }
+
 }
 
 @media screen and (max-width: 800px) {
