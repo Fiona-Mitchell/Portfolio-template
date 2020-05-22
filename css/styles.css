@@ -7,7 +7,6 @@ COLOR PALETTE
 #9FC2CC - quail egg
 */
 
-
 /* Global styles
 ------------------------------------*/
 html {
@@ -18,6 +17,7 @@ html {
   line-height: 30px;
   background-color: #DAE3E5;
   overflow-x: hidden;
+  height: 100%;
   }
 
 body{
@@ -33,11 +33,10 @@ body{
 h1{
   text-align: center;
   font-size: 25px;
-  font-style: bold;
   margin: 0 45px 5px;
   font-family: 'Nanum Myeongjo', serif;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 300;
   color:#283044;
 }
 
@@ -82,6 +81,20 @@ img{
 .info-pages{
   margin: 0 50px;
 }
+
+
+/* .banner {
+  background-size: 100%;
+  z-index: -1;
+  position: relative;
+  padding: 0;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -120px;
+} */
+
 
 /* Nav bar
 ---------------------*/
@@ -129,7 +142,9 @@ nav{
 .nav-links li{
   list-style: none;
   color: white;
+  padding: 0 10px;
 }
+
 
 .nav-links a{
   text-decoration: none;
@@ -152,63 +167,64 @@ transition: all 0.5s ease;
 
 @media only screen and (max-width: 650px){
 
-body{
-  overflow-x: hidden;
-}
+    body{
+      overflow-x: hidden;
+    }
 
-span{
-  display: none;
-}
-.nav-links{
-  position: absolute;
-  right:0;
-  height: 55vh;
-  top: 8vh;
-  background-color: #DAE3E5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in;
-  padding-bottom: 20px;
-}
+    span{
+      display: none;
+    }
+    .nav-links{
+      position: absolute;
+      right:0;
+      height: 55vh;
+      top: 8vh;
+      background-color: #DAE3E5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      padding-bottom: 20px;
+    }
 
-.nav-links h1{
-  display: none;
-}
+    .nav-links h1{
+      display: none;
+    }
 
-.mobile-title{
-  display: flex;
-}
+    .mobile-title{
+      display: flex;
+    }
 
-.nav-links li{
-  opacity: 0;
-}
+    .nav-links li{
+      opacity: 0;
+    }
 
-.burger{
-  display: block;
-}
+    .burger{
+      display: block;
+    }
 
-nav{
-  height: 50vh;
-}
+    nav{
+      height: 50vh;
+    }
+
 }
 
 .nav-active{
   transform:translateX(0%);
 }
 
-@keyframes navLinkFade {
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+      @keyframes navLinkFade {
+        from{
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to{
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
 
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -221,17 +237,22 @@ nav{
 .toggle .line3{
   transform: rotate(45deg) translate(-5px, -6px);
 }
-/* Background colour & images
+
+
+
+
+
+
+/* Columns
 ---------------------*/
 
 .welcome-logo {
-  background-image: url(../images/mountain-sunset-3.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  height: 600px;
+  background-image: url(../images/test-2.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .column-1 {
  float: left;
@@ -294,20 +315,25 @@ nav{
   display: table;
 }
 
-@media only screen and (max-width: 650px){
-  .welcome-logo {
-    background-image: url(../images/mountain-sunset-3.jpg);
-    height: 300px;
-  }
-  .column-2, .column-3, .column-4, .column-5, .column-6, .column-multi{
-    width: 100%;
-    padding:0;
-  }
-  .column-4 .container, .column-3 .container, .column-2 .container, .column-5 .container, .column-6 .container, .column-multi .container {
-    padding:0;
-  }
+        @media only screen and (max-width: 650px){
+          .welcome-logo {
+            background-image: url(../images/test.jpg);
+            height: 300px;
+          }
+          .column-2, .column-3, .column-4, .column-5, .column-6, .column-multi{
+            width: 100%;
+            padding:0;
+          }
+          .column-4 .container, .column-3 .container, .column-2 .container, .column-5 .container, .column-6 .container, .column-multi .container {
+            padding:0;
+          }
 
-}
+        }
+
+
+
+
+
 
 /* Image Overlays */
 .container {
@@ -378,50 +404,50 @@ nav{
 .mobile-desc{
   display: none;
 }
-@media only screen and (max-width: 650px){
-  .text {
-    font-size: 15px;
-    display: block;
-  }
+      @media only screen and (max-width: 650px){
+        .text {
+          font-size: 15px;
+          display: block;
+        }
 
-  .overlay {
-    display: none;
-}
+        .overlay {
+          display: none;
+      }
 
-.icon-overlay {
-  display: none;
-}
-  .mobile-desc{
-    display: block;
-    text-align: center;
-  }
+      .icon-overlay {
+        display: none;
+      }
+        .mobile-desc{
+          display: block;
+          text-align: center;
+        }
 
-}
+      }
+
+
+
+
+
+
+
 
 /* Portfolio
 ---------------------*/
 
 .portfolio{
   background-image: url(../images/placer.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  height: 300px;
-  background-repeat: no-repeat;
-  margin-bottom: 100px;
 }
 
 .column-portfolio {
  float: left;
  align-items: center;
  width: 50%;
- padding: 10px 10px;
+ padding: 0px 10px;
  margin: 0;
 }
 
 .portfolio-display{
-  margin: 0 5vw;
+  margin: 0 2vw;
 }
 
 .headers{
@@ -461,31 +487,26 @@ nav{
   top: -30px;
 }
 
-@media screen and (max-width: 650px) {
-  .portfolio-display{
-    margin: 0;
-  }
+        @media screen and (max-width: 650px) {
+          .portfolio-display{
+            margin: 0;
+          }
 
-.column-portfolio{
-  padding: 0;
-}
+        .column-portfolio{
+          padding: 0;
+        }
 
-.column-portfolio .container{
-  padding: 0;
-}
-}
+        .column-portfolio .container{
+          padding: 0;
+        }
+        }
+
+
+
+
+
 /* Fashion
 ---------------------*/
-.fashion{
-  background-image: url(../images/mountain-sunset-3.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  height: 40px;
-  background-repeat: no-repeat;
-}
-
 
   .fashionSlides {display: none;}
 img {vertical-align: middle;}
@@ -522,15 +543,15 @@ img {vertical-align: middle;}
   animation-duration: 1.7s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+          @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
 
 .button {
   text-align: center;
@@ -558,89 +579,96 @@ img {vertical-align: middle;}
 }
 .shop:hover {background-color: #e7e7e7;}
 
-/* Fashion - graduate catwalk
----------------------*/
-
-.graduate{
-  background-image: url(../images/catwalk/pink.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  margin: 0 0 180px 0;
-  height: 780px;
-  background-repeat: no-repeat;
-  top: -30px;
-}
-
-.graduate-bio{
-  margin: 0 150px 0 150px;
-}
-
-/* Fashion - editorial
----------------------*/
-
-.editorial{
-  background-image: url(../images/editorial/background-2.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  margin: 0;
-  height: 680px;
-  background-repeat: no-repeat;
-  top: -30px;
-}
 
 
-/* Sketches
----------------------*/
 
-.sketches{
-  background-image: url(../images/sketch/sketch-2.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  margin: 0;
-  height: 680px;
-  background-repeat: no-repeat;
-  top: -100px;
-}
 
-/* Osier
----------------------*/
 
-.osier{
-  background-image: url(../images/osier/sketch-4.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  margin: 0;
-  height: 680px;
-  background-repeat: no-repeat;
-  top: -30px;
-}
+    /* Fashion - graduate catwalk
+    ---------------------*/
+
+    .graduate{
+      background-image: url(../images/catwalk/pink.jpg);
+    }
+
+    .graduate-bio{
+      margin: 0 150px 0 150px;
+    }
+
+
+
+
+
+
+
+    /* Fashion - editorial
+    ---------------------*/
+
+    .editorial{
+      background-image: url(../images/editorial/background-2.jpg);
+      background-size: 100%;
+      z-index: 1;
+      position: relative;
+      margin: 0;
+      height: 680px;
+      background-repeat: no-repeat;
+      top: -30px;
+    }
+
+
+
+
+
+
+    /* Sketches
+    ---------------------*/
+
+    .sketches{
+      background-image: url(../images/sketch/sketch-2.jpg);
+      background-size: 100%;
+      z-index: 1;
+      position: relative;
+      margin: 0;
+      height: 680px;
+      background-repeat: no-repeat;
+      top: -100px;
+    }
+
+
+
+
+
+    /* Osier
+    ---------------------*/
+
+    .osier{
+      background-image: url(../images/osier/sketch-4.jpg);
+      background-size: 100%;
+      z-index: 1;
+      position: relative;
+      margin: 0;
+      height: 680px;
+      background-repeat: no-repeat;
+      top: -30px;
+    }
+
+
+
 
 
 /* Creative
 ---------------------*/
 .creative{
-  background-image: url(../images/mountain-sunset-3.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  height: 400px;
-  background-repeat: no-repeat;
+  background-image: url(../images/test.jpg);
 }
+
+
+
+
 /* Blog
 ---------------------*/
 .blog{
-  background-image: url(../images/mountain-sunset-3.jpg);
-  background-size: 100%;
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  height: 300px;
-  background-repeat: no-repeat;
+  background-image: url(../images/test.jpg);
 }
 
 
@@ -728,25 +756,31 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 650px) {
-  .blog-row {
-    min-width: 100%;
-    margin: auto;
-    padding: 30px 10px;
-    border: none;
-  }
+      @media screen and (max-width: 650px) {
+        .blog-row {
+          min-width: 100%;
+          margin: auto;
+          padding: 30px 10px;
+          border: none;
+        }
 
-  .blog-title{
-    width: 60vw;
-  }
+        .blog-title{
+          width: 60vw;
+        }
 
 
-}
+      }
+
+
+
+
+
+
 /* About
 ---------------------*/
 .about{
   text-align: center;
-  padding: 160px 0 80px 0;
+  padding: 110px 0 150px 0;
 }
 
 .about h3, .about a{
@@ -816,7 +850,7 @@ text-align: center;
 }
 
 .container {
-padding: 50px 0;
+padding: 10px 0 50px 0;
 }
 
 .about-column {
@@ -852,6 +886,13 @@ padding: 50px 0;
 .cv p{
   text-align: left;
 }
+
+
+
+
+
+/* Nav bar strikes
+---------------------*/
 
 nav a, .strike a {
   position: relative;
@@ -905,83 +946,88 @@ nav a:hover:after, .strike a:hover:after {
   font-weight: 500;
 }
 
-@media screen and (max-width: 900px) {
+      @media screen and (max-width: 900px) {
 
-  .about-title{
-    width: 15vw;
-  }
+        .about-title{
+          width: 15vw;
+        }
 
-  .about-row {
-    padding: 0 10vw;
-  }
+        .about-row {
+          padding: 0 10vw;
+        }
 
-}
+      }
 
-@media screen and (max-width: 800px) {
+      @media screen and (max-width: 800px) {
 
-  .about-title{
-    width: 15vw;
-  }
+        .about-title{
+          width: 15vw;
+        }
 
-  .about-row {
-    padding: 0 5vw;
-  }
-}
+        .about-row {
+          padding: 0 5vw;
+        }
+      }
 
-@media screen and (max-width: 750px) {
+      @media screen and (max-width: 750px) {
 
-  .about-title{
-    width: 15vw;
-  }
+        .about-title{
+          width: 15vw;
+        }
 
-  .about-row {
-    padding: 0 2vw;
-  }
-}
+        .about-row {
+          padding: 0 2vw;
+        }
+      }
 
-@media screen and (max-width: 650px) {
+      @media screen and (max-width: 650px) {
 
-  .about-column{
-    margin: 30px 0;
-    width: 100%
-  }
+        .about-column{
+          margin: 30px 0;
+          width: 100%
+        }
 
-  .about-column-skills {
-    float: left;
-    width: 100%;
-  }
+        .about-column-skills {
+          float: left;
+          width: 100%;
+        }
 
-  .about-column h2{
-    text-align: center;
-  }
+        .about-column h2{
+          text-align: center;
+        }
 
-  .right h2, .left h2, .middle h2{
-    text-align: left;
-  }
-  .about-links-row {
-    display: block;
-    margin: 20px 0;
-  }
+        .right h2, .left h2, .middle h2{
+          text-align: left;
+        }
+        .about-links-row {
+          display: block;
+          margin: 20px 0;
+        }
 
-  .about-title{
-    width: 100%;
-  }
+        .about-title{
+          width: 100%;
+        }
 
-  .blog-container{
-    padding: 5vw 20vw;
-  }
+        .blog-container{
+          padding: 5vw 20vw;
+        }
 
-  .about-me img{
-    margin: 0;
-    height: 120vw;
-    width: auto;
-    padding-bottom: 50px;
-  }
+        .about-me img{
+          margin: 0;
+          height: 120vw;
+          width: auto;
+          padding-bottom: 50px;
+        }
 
-  .about-row {
-    padding: 0 15vw;
-  }
-}
+        .about-row {
+          padding: 0 15vw;
+        }
+      }
+
+
+
+
+
 
 /* Contact
 ---------------------*/
@@ -1004,6 +1050,10 @@ nav a:hover:after, .strike a:hover:after {
     justify-content: space-between;
 
   }
+
+
+
+
 
   /* social media*/
   .sm-logo {
