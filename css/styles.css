@@ -190,7 +190,7 @@ transition: all 0.5s ease;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
       padding-bottom: 20px;
-      z-index: 2;
+      /* z-index: 2; */
     }
 
     .nav-links h1{
@@ -210,7 +210,7 @@ transition: all 0.5s ease;
     }
 
     nav{
-      height: 10vh;
+      height: 50vh;
     }
 
     .banner{
@@ -916,7 +916,7 @@ nav a, .strike a {
   position: relative;
   display: block;
   cursor: pointer;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 nav a:before, nav a:after, .strike a:before, .strike a:after {
@@ -1013,7 +1013,6 @@ nav a:hover:after, .strike a:hover:after {
 
         .about-column h2{
           text-align: center;
-
         }
 
         .right h2, .left h2, .middle h2{
@@ -1107,8 +1106,8 @@ nav a:hover:after, .strike a:hover:after {
   ---------------------*/
 
   .wrap{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin:4em auto;
     overflow: hidden;
