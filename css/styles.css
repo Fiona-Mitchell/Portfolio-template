@@ -38,6 +38,7 @@ h1{
   letter-spacing: 2px;
   font-weight: 300;
   color:#283044;
+  padding: 0 20px;
 }
 
 
@@ -47,6 +48,7 @@ h2{
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 0 20px;
 }
 
 
@@ -56,6 +58,7 @@ h3{
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 500;
+  padding: 0 20px;
 }
 
 p{
@@ -187,6 +190,7 @@ transition: all 0.5s ease;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
       padding-bottom: 20px;
+      z-index: 2;
     }
 
     .nav-links h1{
@@ -206,7 +210,11 @@ transition: all 0.5s ease;
     }
 
     nav{
-      height: 50vh;
+      height: 10vh;
+    }
+
+    .banner{
+      display: none;
     }
 
 }
@@ -908,6 +916,7 @@ nav a, .strike a {
   position: relative;
   display: block;
   cursor: pointer;
+  z-index: -1;
 }
 
 nav a:before, nav a:after, .strike a:before, .strike a:after {
@@ -993,7 +1002,7 @@ nav a:hover:after, .strike a:hover:after {
       @media screen and (max-width: 650px) {
 
         .about-column{
-          margin: 30px 0;
+          margin: 20px 0;
           width: 100%
         }
 
@@ -1004,6 +1013,7 @@ nav a:hover:after, .strike a:hover:after {
 
         .about-column h2{
           text-align: center;
+
         }
 
         .right h2, .left h2, .middle h2{
@@ -1031,6 +1041,22 @@ nav a:hover:after, .strike a:hover:after {
 
         .about-row {
           padding: 0 15vw;
+        }
+
+        .about br{
+          display:none;
+        }
+
+        .about{
+          padding: 0;
+        }
+
+        .logo{
+          margin: 50px;
+        }
+
+        .banner{
+          height: 320px;
         }
       }
 
@@ -1081,8 +1107,8 @@ nav a:hover:after, .strike a:hover:after {
   ---------------------*/
 
   .wrap{
-    width: 350px;
-    height: 350px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin:4em auto;
     overflow: hidden;
