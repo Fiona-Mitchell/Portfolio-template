@@ -437,14 +437,14 @@ transition: all 0.5s ease;
 
 
 
-
-
 /* Portfolio
 ---------------------*/
 
 .portfolio{
-  background-image: url(../images/graphic/background-1.jpg);
+  background-image: url(../images/ux/banner-2.png);
+  height: 103vh;
 }
+
 
 .column-portfolio {
  float: left;
@@ -541,7 +541,7 @@ img {vertical-align: middle;}
 
 .menu-dots{
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .active {
@@ -1156,3 +1156,38 @@ nav a:hover:after, .strike a:hover:after {
     0% {opacity: 0;}
     100% {opacity: 1;}
   }
+
+
+
+    /* scroll down animation
+    ---------------------*/
+
+    .scroll{
+      width: 40px;
+      margin:-55px auto 4em auto;
+    }
+
+    .portfolio-scroll{
+      margin:-200px auto 4em auto;
+    }
+
+    .arrow-3{
+      opacity: 0;
+      animation: scrolldissolve 4s ease-in infinite;
+    }
+
+    .arrow-2{
+      opacity: 0;
+      animation: scrolldissolve 4s ease-in infinite;
+    }
+
+    .arrow-1{
+      opacity: 0;
+      animation: scrolldissolve 4s ease-in infinite;
+    }
+
+    @keyframes scrolldissolve {
+      0% {opacity: 0;}
+      40%, 60% {opacity: 1;}
+      100% {opacity: 0;}
+    }
