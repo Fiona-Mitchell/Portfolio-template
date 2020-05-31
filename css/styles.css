@@ -83,17 +83,17 @@ img{
 }
 
 
-/* .banner {
+.banner {
   background-size: 100%;
   z-index: -1;
   position: relative;
   padding: 0;
-  height: 600px;
+  height: 520px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   top: -120px;
-} */
+}
 
 
 /* Nav bar
@@ -435,7 +435,7 @@ transition: all 0.5s ease;
 ---------------------*/
 
 .portfolio{
-  background-image: url(../images/placer.jpg);
+  background-image: url(../images/graphic/background-1.jpg);
 }
 
 .column-portfolio {
@@ -507,6 +507,10 @@ transition: all 0.5s ease;
 
 /* Fashion
 ---------------------*/
+
+.fashion{
+  background-image: url(../images/editorial/background.png);
+}
 
   .fashionSlides {display: none;}
 img {vertical-align: middle;}
@@ -659,7 +663,7 @@ img {vertical-align: middle;}
 /* Creative
 ---------------------*/
 .creative{
-  background-image: url(../images/test.jpg);
+  background-image: url(../images/graphic/background-1.png);
 }
 
 
@@ -887,6 +891,12 @@ padding: 10px 0 50px 0;
   text-align: left;
 }
 
+/* .about-column-skills p{
+  background-color: #9FC2CC;
+  padding: 5px 10px;
+  border-radius: 25px;
+  text-align: center;
+} */
 
 
 
@@ -1106,7 +1116,8 @@ nav a:hover:after, .strike a:hover:after {
   @keyframes shadow {
     0% {fill: #283044;}
     45%, 55% {fill: #DAE3E5;}
-    85% {fill:#3c2854;}
+    80% {fill: #ca9ad4;}
+    85% {fill:#9370ac;}
     100% {fill: #283044;}
   }
 
