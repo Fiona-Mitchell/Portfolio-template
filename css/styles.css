@@ -1,10 +1,9 @@
 /*
 COLOR PALETTE
-#FF7477 - coral
-#DAE3E5 - light blue
-#283044 - blue dark
-#9Fc2CC - mid blue
-#9FC2CC - quail egg
+#ff5a55 - coral
+#f3f7f6 - light
+#284044 - green dark
+#7c9595 - mid green
 */
 
 /* Global styles
@@ -15,9 +14,11 @@ html {
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  background-color: #DAE3E5;
+  background-color: #f3f7f6;
   overflow-x: hidden;
   height: 100%;
+  margin: 0;
+  padding: 0;
   }
 
 body{
@@ -37,7 +38,7 @@ h1{
   font-family: 'Nanum Myeongjo', serif;
   letter-spacing: 2px;
   font-weight: 300;
-  color:#283044;
+  color: #132123;
   padding: 0 20px;
 }
 
@@ -49,6 +50,7 @@ h2{
   text-transform: uppercase;
   font-weight: 700;
   padding: 0 20px;
+  color: #284044;
 }
 
 
@@ -59,6 +61,7 @@ h3{
   text-transform: uppercase;
   font-weight: 500;
   padding: 0 20px;
+  color: #284044;
 }
 
 p{
@@ -66,10 +69,16 @@ p{
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 300;
+  color: #284044;
 }
 
 a {
-  color: #FF7477;
+  color: #284044;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7c9595;
   text-decoration: none;
 }
 
@@ -91,7 +100,7 @@ img{
   z-index: -1;
   position: relative;
   padding: 0;
-  height: 520px;
+  height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -391,7 +400,7 @@ transition: all 0.5s ease;
 }
 
 .text {
-  color: #FF7477;
+  color: #e65954;
   background-color: white;
   opacity: 0.8;
   border-radius: 5%;
@@ -441,7 +450,7 @@ transition: all 0.5s ease;
 ---------------------*/
 
 .portfolio{
-  background-image: url(../images/ux/banner-2.png);
+  background-image: url(../images/ux/banner.png);
   height: 103vh;
 }
 
@@ -459,7 +468,7 @@ transition: all 0.5s ease;
 }
 
 .headers{
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .anna{
@@ -545,7 +554,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #9FC2CC;
+  background-color: #7c9595;
 }
 
 .fade {
@@ -578,8 +587,8 @@ img {vertical-align: middle;}
 
   .shop {
   background-color: #DAE3E5;
-  color: #FF7477;
-  border: 2px solid #FF7477;
+  color: #e65954;
+  border: 2px solid #e65954;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -706,12 +715,13 @@ img {vertical-align: middle;}
   left: -3px;
   width: 100%;
   height: 100%;
-  background-color: #283044;
+  background-color: #284044;
   opacity: 70%;
   z-index: -1;
   transition: all 0.4s;
   transform-origin: top;
   mix-blend-mode: multiply;
+  border-radius: 3px;
 }
 
 .blog-title:hover:before, .about-title:hover:before{
@@ -734,6 +744,7 @@ img {vertical-align: middle;}
   transition: all 0.2s;
   transform-origin: bottom;
   mix-blend-mode: multiply;
+  border-radius: 3px;
 
 }
 
@@ -745,7 +756,7 @@ img {vertical-align: middle;}
 }
 
 .blog-title:hover, .about-title:hover{
-  color: #FF7477;
+  color: #ff5a55;
 }
 
 .blog-container {
@@ -793,13 +804,14 @@ text-align: center;
 .about{
   text-align: center;
   padding: 110px 0 150px 0;
+  color: #7c9595;
 }
 
 .about h3, .about a{
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
-  color: black;
+  /* color: #132123; */
 }
 
 .about h1{
@@ -807,14 +819,15 @@ text-align: center;
   letter-spacing: 1px;
   line-height: 1.2;
   font-weight: 300;
+  color: #f3f7f6;
 }
 
 .about p{
   text-align: center;
   font-family: futura-pt-condensed, sans-serif;
   font-style: normal;
-  color: black;
-  width: 180px;
+  color: #132123;
+  width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -846,6 +859,11 @@ text-align: center;
 .about img{
   width: 200px;
 }
+
+.about h2{
+  color:;
+}
+
 .about-column {
   float: left;
   width: 50%;
@@ -859,6 +877,7 @@ text-align: center;
 
 .about-row h2 {
   text-align: left;
+  padding: 0;
 }
 
 .container {
@@ -870,7 +889,7 @@ padding: 10px 0 50px 0;
 }
 
 .about-row {
-  padding: 0 15vw;
+  padding: 10vh 15vw;
 }
 
 .about-row:after {
@@ -900,7 +919,7 @@ padding: 10px 0 50px 0;
 }
 
 /* .about-column-skills p{
-  background-color: #9FC2CC;
+  background-color: #7c9595;
   padding: 5px 10px;
   border-radius: 25px;
   text-align: center;
@@ -934,12 +953,12 @@ nav a:before, .strike a:before {
 }
 nav a:after, .strike a:after {
   right: 2.5px;
-  background: #fff;
+  background: #7c9595;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 nav a:hover:before, .strike a:hover:before {
-  background: #fff;
+  background: #7c9595;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -1075,10 +1094,13 @@ nav a:hover:after, .strike a:hover:after {
     letter-spacing: 1px;
   }
 
+  footer h2{
+    color:;
+  }
+
   .contact{
     font-size: 25px;
-    color: #283044;
-    padding: 30px 0 0 0 ;
+    padding: 30px 0 0 0;
   }
 
   #contactInfo{
@@ -1139,11 +1161,11 @@ nav a:hover:after, .strike a:hover:after {
   }
 
   @keyframes shadow {
-    0% {fill: #283044;}
+    0% {fill: #284044;}
     45%, 55% {fill: #DAE3E5;}
     80% {fill: #ca9ad4;}
     85% {fill:#9370ac;}
-    100% {fill: #283044;}
+    100% {fill: #284044;}
   }
 
 
@@ -1164,7 +1186,7 @@ nav a:hover:after, .strike a:hover:after {
 
     .scroll{
       width: 40px;
-      margin:-55px auto 4em auto;
+      margin:-5em auto 4em auto;
     }
 
     .portfolio-scroll{
