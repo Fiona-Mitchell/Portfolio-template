@@ -450,15 +450,26 @@ transition: all 0.5s ease;
 ---------------------*/
 
 .portfolio{
-  background-image: url(../images/ux/banner.png);
-  height: 103vh;
+  background-image: url(../images/ux/banner-4.png);
+  width: 100vw;
 }
 
+.portfolio-tags p{
+  display: inline;
+  padding: 7px 15px;
+  background-color: #7c9595;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.portfolio-tags{
+  text-align: center;
+}
 
 .column-portfolio {
  float: left;
  align-items: center;
- width: 50%;
+ width: 33%;
  padding: 0px 10px;
  margin: 0;
 }
@@ -1190,7 +1201,7 @@ nav a:hover:after, .strike a:hover:after {
     }
 
     .portfolio-scroll{
-      margin:-200px auto 4em auto;
+      margin: -85px auto 4em auto;
     }
 
     .arrow-3{
