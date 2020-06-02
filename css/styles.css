@@ -1051,6 +1051,16 @@ nav a:hover:after, .strike a:hover:after {
     overflow: hidden;
   }
 
+  .hi{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin:4em auto;
+    overflow: hidden;
+    animation: rotate 20s linear infinite;
+
+  }
+
   .sun{
     animation: sun 12s ease-in infinite, rise 12s ease-in-out infinite;
   }
@@ -1058,6 +1068,15 @@ nav a:hover:after, .strike a:hover:after {
   .sun stroke{
     opacity: 0;
   }
+
+  @keyframes rotate {
+    from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
 
   @keyframes sun {
     0% {fill: #c21c02;}
