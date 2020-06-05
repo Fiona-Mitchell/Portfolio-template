@@ -371,6 +371,11 @@ transition: all 0.5s ease;
   position: relative;
 }
 
+.container img{
+  padding-bottom: 10px;
+}
+
+
 .container p{
   text-align: center;
 }
@@ -823,6 +828,8 @@ text-align: center;
 .blog-post li{
   text-decoration: none;
   list-style: square;
+  color: #7c9595;
+  font-size: 12px;
 }
 
 
@@ -1428,7 +1435,7 @@ to {
       }
 
       .about-row {
-        padding: 0 15vw;
+        padding: 0 10vw;
       }
 
       .about br{
@@ -1468,6 +1475,10 @@ to {
       .aaroe{
         height: 220px;
         top: -100px;
+      }
+
+      .blog-post{
+        margin: 30px 20px 30px 18px;
       }
     }
 
