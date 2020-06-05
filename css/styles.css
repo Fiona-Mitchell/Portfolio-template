@@ -1339,6 +1339,12 @@ to {
     .column-portfolio .container{
       padding: 0;
     }
+
+    .portfoliobanner{
+      height: 200px;
+      margin: 0;
+      top: 0;
+    }
     }
 
 
