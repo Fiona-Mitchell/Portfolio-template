@@ -434,9 +434,16 @@ transition: all 0.5s ease;
 /* Portfolio
 ---------------------*/
 
-.portfolio{
-  background-image: url(../images/ux/banner-4.png);
-  width: 100vw;
+.portfoliobanner{
+  background-image: url(../images/ux/banner.png);
+  background-size: 100%;
+  z-index: -1;
+  position: relative;
+  margin: 0 0 150px 0;
+  height: 465px;
+  background-repeat: no-repeat;
+  top: -25px;
+
 }
 
 .portfolio-tags p{
@@ -538,7 +545,7 @@ transition: all 0.5s ease;
 ---------------------*/
 
 .fashion{
-  background-image: url(../images/editorial/background.png);
+  background-image: url(../images/editorial/background2.png);
 }
 
   .fashionSlides {display: none;}
@@ -701,7 +708,7 @@ img {vertical-align: middle;}
 /* Creative
 ---------------------*/
 .creative{
-  background-image: url(../images/graphic/background-1.png);
+  background-image: url(../images/graphic/background2.png);
 }
 
 
@@ -799,6 +806,14 @@ text-align: center;
   margin: 20px;
 }
 
+.blog-post{
+  margin: 50px 100px;
+}
+
+.blog-post li{
+  text-decoration: none;
+  list-style: square;
+}
 
 
 
@@ -1121,11 +1136,11 @@ to {
 
     .scroll{
       width: 40px;
-      margin:-5em auto 4em auto;
+      margin:-7em auto 4em auto;
     }
 
     .portfolio-scroll{
-      margin: -85px auto 4em auto;
+      margin: -9em auto 4em auto;
     }
 
     .arrow-3{
