@@ -277,6 +277,62 @@ transition: all 0.5s ease;
 }
 
 
+/* index page */
+.fade-in-html{
+  opacity: 0;
+  animation: fade 2s ease-in forwards 4s;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+h4 {
+  text-shadow: 0 0 5px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #fff, 0 0 10px #fff, 0 0 98px #ff0000;
+  color: #ff5a55;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 100px;
+  animation: fade-out 4s linear forwards;
+  opacity: 0;
+}
+
+.welcome-index{
+margin: 50px 50px;
+}
+
+
+
+
+
+    .container-index {
+    padding: 30px 0;
+    margin-top: -350px;
+    z-index: -1;
+    position: relative;
+    }
+
+    .column-index {
+      flex: 25%;
+      max-width: 30%;
+      padding: 0 4px;
+    }
+
+    .column-index img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    .row-index {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      justify-content: center;
+    }
 
 
 
@@ -1147,11 +1203,12 @@ to {
   }
 
   @keyframes fade-out {
-    0% {opacity: 0;}
-    30%, 80% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {opacity: 0; transform: translateX(0%)}
+    40% {opacity: 1; transform: translateX(0%)}
+    70% {opacity: 1; transform: translateX(0%)}
+    80% {opacity: 0; transform: translateX(0%)}
+    100% {opacity: 0; transform: translateX(50%)}
   }
-
 
     /* scroll down animation
     ---------------------*/
@@ -1486,36 +1543,12 @@ to {
       .blog-post{
         margin: 30px 20px 30px 18px;
       }
+      .container-index {
+      padding: 0;
+      margin-top: -400px;
+      }
     }
 
-
-
-
-    .container-index {
-    padding: 30px 0;
-    margin-top: -350px;
-    z-index: -1;
-    position: relative;
-    }
-
-    .column-index {
-      flex: 25%;
-      max-width: 30%;
-      padding: 0 4px;
-    }
-
-    .column-index img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-    }
-
-    .row-index {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 20px;
-      justify-content: center;
-    }
 
     @media screen and (max-width: 800px) {
       .column-index {
@@ -1530,29 +1563,3 @@ to {
         max-width: 100%;
       }
     }
-
-    .fade-in-html{
-      opacity: 0;
-      animation: fade 2s ease-in forwards 5s;
-    }
-
-    @keyframes fade {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-
-
-    h4 {
-      text-shadow: 0 0 5px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #fff, 0 0 10px #fff, 0 0 98px #ff0000;
-      color: #ff5a55;
-      font-size: 80px;
-      letter-spacing: 5px;
-      text-align: center;
-      line-height: 100px;
-      animation: fade-out 4.5s linear forwards;
-      opacity: 0;
-    }
-
-.welcome-index{
-  margin: 50px 50px;
-}
