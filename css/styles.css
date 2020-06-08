@@ -60,7 +60,6 @@ h3{
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 0 20px;
   color: #284044;
 }
 
@@ -514,8 +513,8 @@ margin: 50px 50px;
 }
 
 .portfolio-tags p{
-  display: inline;
-  padding: 7px 15px;
+  display: inline-block;
+  padding: 2px 12px;
   background-color: #7c9595;
   color: #fff;
   border-radius: 30px;
@@ -576,10 +575,20 @@ margin: 50px 50px;
   background-size: 100%;
   z-index: -1;
   position: relative;
-  margin: 0 0 180px 0;
-  height: 880px;
+  margin: 0 0 30px 0;
+  height: 480px;
   background-repeat: no-repeat;
-  top: -100px;
+  top: -20px;
+}
+
+.lot1{
+  background-image: url(../images/ux/levi-app-2.png);
+  background-size: 100%;
+  z-index: -1;
+  position: relative;
+  margin: 0 0 30px 0;
+  height: 350px;
+  background-repeat: no-repeat;
 }
 
 .aaroe{
@@ -588,9 +597,9 @@ margin: 50px 50px;
   z-index: -1;
   position: relative;
   margin: 0;
-  height: 750px;
+  height: 450px;
   background-repeat: no-repeat;
-  top: -130px;
+  top: -30px;
 }
 
 .connect{
@@ -598,9 +607,9 @@ margin: 50px 50px;
   background-size: 100%;
   z-index: 1;
   position: relative;
-  height: 600px;
+  height: 350px;
   background-repeat: no-repeat;
-  top: -20px;
+  top: 15px;
 }
 
 
@@ -976,7 +985,7 @@ text-align: center;
 }
 
 .container {
-padding: 10px 0 50px 0;
+padding: 10px 0 10px 0;
 }
 
 .about-column {
@@ -1398,9 +1407,18 @@ to {
     }
 
     .portfoliobanner{
-      height: 200px;
+      background-image: url(../images/ux/mobile-banner.png);
+      height: 250px;
       margin: 0;
       top: 0;
+    }
+
+    .connect{
+      background-image: url(../images/ux/mobile-connect.png);
+      width: 100px;
+      margin: auto;
+      height: 300px;
+      top: 10px;
     }
     }
 
@@ -1440,10 +1458,6 @@ to {
 
       .about-row {
         padding: 0 5vw;
-      }
-
-      .aaroe{
-        height: 450px;
       }
     }
 
@@ -1536,8 +1550,7 @@ to {
       }
 
       .aaroe{
-        height: 220px;
-        top: -100px;
+        display: none;
       }
 
       .blog-post{
