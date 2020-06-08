@@ -1420,6 +1420,17 @@ to {
       height: 300px;
       top: 10px;
     }
+
+    .creative{
+      background-image: url(../images/graphic/mobile-background.png);
+      width: 150px;
+      margin: 30px auto 0px;
+    }
+
+    .fashion{
+      display: none;
+    }
+
     }
 
 
