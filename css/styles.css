@@ -279,8 +279,14 @@ transition: all 0.5s ease;
 /* index page */
 .fade-in-html{
   opacity: 0;
-  animation: fade 2s ease-in forwards 4s;
+  animation: fade 2s ease-in forwards 3.5s;
 }
+
+.fade-in-html-nav{
+  opacity: 0;
+  animation: fade 2s ease-in forwards 1s;
+}
+
 
 @keyframes fade {
   0% {opacity: 0;}
@@ -502,11 +508,11 @@ margin: 50px 50px;
 
 .portfoliobanner{
   background-image: url(../images/ux/banner.png);
-  background-size: 100%;
+  background-size: 100vw;
   z-index: -1;
   position: relative;
   margin: 0 0 150px 0;
-  height: 465px;
+  height: 75vh;
   background-repeat: no-repeat;
   top: -25px;
 
@@ -1228,7 +1234,7 @@ to {
     }
 
     .portfolio-scroll{
-      margin: -9em auto 4em auto;
+      margin: -12em auto 4em auto;
     }
 
     .arrow-3{
@@ -1393,7 +1399,7 @@ to {
 
 
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 550px) {
       .portfolio-display{
         margin: 0;
       }
@@ -1408,7 +1414,7 @@ to {
 
     .portfoliobanner{
       background-image: url(../images/ux/mobile-banner.png);
-      height: 250px;
+      height: 350px;
       margin: 0;
       top: 0;
     }
