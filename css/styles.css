@@ -184,7 +184,7 @@ nav a:hover:after, .strike a:hover:after {
 .goback{
   text-align: left;
   color: #284044;
-  position: relative;
+  position: absolute;
   transition: all 0.2s;
   color: white;
   width: 30px;
@@ -398,7 +398,7 @@ display: table;
 /* Description page of each portfolio project
 ---------------------*/
 .info-titles{
-    margin: 5vh 2vw 0;
+    margin: 10vh 2vw 0;
 }
 
 .info-titles h1{
@@ -434,26 +434,31 @@ display: table;
 ---------------------*/
 .anna{
   background-image: url(../images/ux/anna-background.jpg);
+  position: relative;
 
 }
 
 .lot1{
   background-image: url(../images/ux/levi-app-2.png);
+  position: relative;
 }
 
 .aaroe{
-  background-image: url(../images/ux/aaroe-background.jpg);
+  background-image: url(../images/ux/aaroe-background.png);
+  position: relative;
+  height: 300px;
 }
 
 .connect{
   background-image: url(../images/ux/connect.png);
+  position: relative;
 }
 
 /* Fashion
 ---------------------*/
 
 .fashion{
-  background-image: url(../images/editorial/background2.jpg);
+  background-image: url(../images/editorial/background3.jpg);
 }
 
 .levi{
@@ -463,8 +468,21 @@ display: table;
 /* Creative
 ---------------------*/
 .creative{
-  background-image: url(../images/graphic/background.png);
+  background-image: url(../images/graphic/background.jpg);
 }
+
+/* Blog
+---------------------*/
+.blogcover{
+  background-image: url(../images/blog/background.jpg);
+}
+
+/* About
+---------------------*/
+.aboutcover{
+  background-image: url(../images/about/background2.jpg);
+}
+
 /* Fashion slideshow
 ---------------------*/
   .fashionSlides {display: none;}
@@ -659,6 +677,16 @@ text-align: center;
   padding: 8vh 0;
   color: #7c9595;
 }
+
+.aboutcoverspace{
+  margin-top: 180px;
+}
+
+.aboutcoverspace span{
+    padding: 5px 10px;
+    background: #fcfcfc;
+}
+
 
 .profile{
   width: 250px;
@@ -910,6 +938,8 @@ footer{
 
     .banner{
       height: 200px;
+      width: 150%;
+      left: -25%;
     }
 
     .scroll{
@@ -971,7 +1001,7 @@ footer{
 
 @media screen and (max-width: 550px) {
   .portfolio-display{
-    margin: 0;
+    margin-top: 80px;
   }
 
 .column-portfolio{
@@ -982,9 +1012,6 @@ footer{
   padding: 0;
 }
 
-.portfolio{
-  display: none;
-}
 
 .connect{
   background-image: url(../images/ux/mobile-connect.png);
@@ -998,9 +1025,6 @@ footer{
   background-image: url(../images/graphic/background.jpg);
 }
 
-.fashion{
-  display: none;
-}
 
 .about-column{
   margin: 20px 0;
@@ -1028,10 +1052,6 @@ footer{
   width: 100%;
 }
 
-.blog-container{
-  padding: 5vw;
-}
-
 .about-me img{
   margin: 0;
   height: 120vw;
@@ -1049,6 +1069,10 @@ footer{
 
 .about{
   padding: 0;
+}
+
+.aboutcoverspace{
+  margin-top: 80px;
 }
 
 .logo{
