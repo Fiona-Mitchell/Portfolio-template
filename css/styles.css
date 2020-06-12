@@ -722,6 +722,13 @@ text-align: center;
 .about-row {
   padding: 5vh 10vw;
 }
+.about-container{
+  margin-left: 5vw;
+}
+
+.about-row .column-3{
+  padding: 0 20px;
+}
 
 .about-row:after {
   content: "";
