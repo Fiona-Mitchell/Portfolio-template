@@ -377,6 +377,11 @@ display: table;
     background: #fcfcfc;
 }
 
+.container h2 span{
+    padding: 5px 10px;
+    background: #fcfcfc;
+}
+
 .portfolio-tags{
   text-align: center;
 }
