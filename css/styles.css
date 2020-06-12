@@ -346,6 +346,10 @@ display: table;
   text-align: center;
 }
 
+.padding{
+  padding: 0 30px;
+}
+
 .image {
   display: block;
   width: 100%;
@@ -868,6 +872,9 @@ footer{
       overflow-x: hidden;
     }
 
+.overflow{
+  overflow-x: hidden;
+}
     .nav-links{
       position: absolute;
       right:0;
