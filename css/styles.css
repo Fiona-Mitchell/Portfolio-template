@@ -979,10 +979,17 @@ footer{
   .icon-overlay {
     display: none;
   }
-    .mobile-desc{
-      display: block;
-      text-align: center;
-    }
+
+  .mobile-desc{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #284044;
+  }
+
 
   .blog-row {
     min-width: 100%;
