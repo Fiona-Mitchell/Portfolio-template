@@ -303,6 +303,10 @@ background-color: #ccdbd8;
  z-index: -1;
 }
 
+.home{
+  display: none;
+  background-image: url(../images/plain-background.jpg);
+}
 
 /* Columns
 ---------------------*/
@@ -383,7 +387,7 @@ display: table;
 }
 
 .portfolio-display{
-  margin: 370px 2vw 0;
+  margin: 370px 0 0;
 }
 
 .portfolio-display span{
@@ -957,8 +961,15 @@ footer{
 
     .banner{
       height: 200px;
-      width: 150%;
-      left: -25%;
+      width: 100%;
+    }
+
+    .parallax {
+      display: none;
+    }
+
+    .home{
+      display: block;
     }
 
     .scroll{
@@ -1102,7 +1113,8 @@ footer{
 }
 
 .logo{
-  margin: 50px;
+  margin: 0px;
+  padding: 20px 0;
 }
 
 .info-titles .about-column{
@@ -1131,6 +1143,7 @@ footer{
 }
 
 .container-index {
+display: none;
 padding: 0;
 }
 
