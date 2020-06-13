@@ -94,12 +94,18 @@ nav{
   min-height: 9vh;
   padding-top: 20px;
   position: relative;
+  background-color: transparent;
 }
 
 li a {
   display: block;
   padding: 1px;
-  font-size: 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #284044;
+  background-color: #ccdbd8;
 
 }
 
@@ -251,10 +257,19 @@ nav a:hover:after, .strike a:hover:after {
 
 /* index page styles */
 
+.parallax {
+  background-image: url(../images/mountain-background.jpg);
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
 .container-index {
-padding: 30px 0;
-z-index: -1;
+padding: 0;
 position: relative;
+background-color: #ccdbd8;
 }
 
 .column-index {
@@ -275,7 +290,6 @@ position: relative;
   padding: 0 20px;
   justify-content: center;
 }
-
 
 /* background menu banners */
 .banner {
@@ -812,7 +826,7 @@ footer{
   /* SVG animation
   ---------------------*/
 .logo{
-  margin: 100px 0 20px 0;
+  padding: 100px 0 20px 0;
   clear:both;
 }
 
@@ -913,7 +927,7 @@ footer{
       right:0;
       height: 55vh;
       top: 8vh;
-      background-color: #DAE3E5;
+      background-color: #ccdbd8;
       display: flex;
       flex-direction: column;
       align-items: center;
