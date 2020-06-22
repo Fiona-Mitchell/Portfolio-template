@@ -105,7 +105,6 @@ li a {
   text-transform: uppercase;
   font-weight: 700;
   color: #284044;
-  background-color: #ccdbd8;
 
 }
 
@@ -269,7 +268,6 @@ nav a:hover:after, .strike a:hover:after {
 .container-index {
 padding: 0;
 position: relative;
-background-color: #ccdbd8;
 }
 
 .column-index {
@@ -365,7 +363,7 @@ display: table;
 }
 
 .padding{
-  padding: 0 30px;
+  padding: 0 100px;
 }
 
 .image {
@@ -421,7 +419,7 @@ display: table;
 /* Description page of each portfolio project
 ---------------------*/
 .info-titles{
-    margin: 10vh 2vw 0;
+    margin: 10vh 50vw 10vh 3vw;
 }
 
 .info-titles h1{
@@ -455,27 +453,6 @@ display: table;
 
 /* Portfolio pages cover images
 ---------------------*/
-.anna{
-  background-image: url(../images/ux/anna-background.jpg);
-  position: relative;
-
-}
-
-.lot1{
-  background-image: url(../images/ux/levi-app-2.png);
-  position: relative;
-}
-
-.aaroe{
-  background-image: url(../images/ux/aaroe-background.png);
-  position: relative;
-  height: 300px;
-}
-
-.connect{
-  background-image: url(../images/ux/connect.png);
-  position: relative;
-}
 
 /* Fashion
 ---------------------*/
@@ -555,11 +532,6 @@ img {vertical-align: middle;}
 
 /* Fashion - graduate catwalk
 ---------------------*/
-
-.graduate{
-  background-image: url(../images/catwalk/pink.jpg);
-  height: 100%;
-}
 
 .graduate-bio{
   margin: 0 100px;
@@ -990,6 +962,10 @@ footer{
     }
     .column-4 .container, .column-3 .container, .column-2 .container, .column-5 .container, .column-6 .container, .column-multi .container {
       padding:0;
+    }
+
+    .padding{
+      padding: 0 30px;
     }
 
     .text {
