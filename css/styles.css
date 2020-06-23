@@ -295,6 +295,10 @@ position: relative;
   margin: 2vh auto;
 }
 
+.index-mobile{
+  display: none;
+}
+
 .index-margin{
   margin-top: 120px;
 }
@@ -535,7 +539,11 @@ display: table;
 /* Creative
 ---------------------*/
 .icons{
-  margin: 150px 100px;
+  margin: 150px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
 }
 
 .index-icons{
@@ -544,7 +552,7 @@ display: table;
 }
 
 .about-icons{
-  margin: 100px 80px;
+  margin: 90px 20%;
 }
 /* Blog
 ---------------------*/
@@ -744,7 +752,7 @@ text-align: center;
 ---------------------*/
 .about{
   text-align: center;
-  padding: 8vh 0;
+  margin: 220px 0 50px;
   color: #7c9595;
 }
 
@@ -964,6 +972,35 @@ footer{
 
 /* mobile settings */
 
+@media only screen and (max-width: 900px){
+  .column-ig{
+    width: 100%;
+    padding:0;
+  }
+
+  .index-intro{
+    height: auto;
+    width: 85%;
+  }
+
+  .index-margin{
+    margin-top: 0px;
+  }
+
+  .icons{
+    width: 550px;
+    margin: 150px auto 0;
+  }
+
+  .about-icons{
+    margin: 90px 15%;
+  }
+
+  .portfolio-display{
+    margin: 370px 10px 0
+  }
+}
+
 @media only screen and (max-width: 650px){
 
     body{
@@ -1007,7 +1044,7 @@ footer{
     }
 
     .banner{
-      height: 250px;
+      height: 370px;
       width: 100%;
     }
 
@@ -1058,7 +1095,6 @@ footer{
       color: #284044;
     }
 
-
     .blog-row {
       min-width: 100%;
       margin: auto;
@@ -1079,38 +1115,30 @@ footer{
       background-color: #ccdbd8;
     }
 
+    .index-intro{
+      display: none;
+    }
+
+    .index-mobile{
+      display: block;
+      margin: 50px 50px;
+    }
+
     .icons{
-      margin: 75px 100px;
+      width: 400px;
+      margin: 120px auto 0;
+    }
+
+    .about-icons{
+      margin: 90px 10%;
     }
 
     .portfolio-display{
-      margin-top: 150px;
+      margin: 270px 10px 0;
     }
-
 }
-
-@media only screen and (max-width: 900px){
-  .column-ig{
-    width: 100%;
-    padding:0;
-  }
-
-  .index-intro{
-    height: auto;
-    width: 85%;
-  }
-
-  .index-margin{
-    margin-top: 0px;
-  }
-}
-
 
 @media screen and (max-width: 550px) {
-  .portfolio-display{
-    margin-top: 150px;
-  }
-
 .column-portfolio{
   padding: 0;
 }
@@ -1169,7 +1197,7 @@ footer{
 }
 
 .about{
-  padding: 70px 0 0 0;
+  margin: 270px 0 0;
 }
 
 .aboutcoverspace{
