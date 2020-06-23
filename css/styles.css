@@ -295,6 +295,10 @@ position: relative;
   margin: 2vh auto;
 }
 
+.index-margin{
+  margin-top: 180px;
+}
+
 .bounce{
   animation: bounce 12s infinite ease-in-out;
 }
@@ -1068,12 +1072,20 @@ footer{
     width: 100%;
     padding:0;
   }
+
+  .index-intro{
+    height: auto;
+  }
+
+  .index-margin{
+    margin-top: 0px;
+  }
 }
 
 
 @media screen and (max-width: 550px) {
   .portfolio-display{
-    margin-top: 80px;
+    margin-top: 0px;
   }
 
 .column-portfolio{
