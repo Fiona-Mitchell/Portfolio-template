@@ -988,7 +988,7 @@ footer{
   }
 
   .icons{
-    width: 550px;
+    width: 90vw;
     margin: 150px auto 0;
   }
 
@@ -1041,11 +1041,6 @@ footer{
 
     nav{
       height: 5vh;
-    }
-
-    .banner{
-      height: 370px;
-      width: 100%;
     }
 
     .parallax {
@@ -1110,6 +1105,11 @@ footer{
       animation: none;
     }
 
+    .banner{
+      height: 370px;
+      width: 100%;
+    }
+
     .index-icons{
       margin: 100px 10%;
       background-color: #ccdbd8;
@@ -1121,11 +1121,11 @@ footer{
 
     .index-mobile{
       display: block;
-      margin: 50px 50px;
+      margin: 50px 20px;
     }
 
     .icons{
-      width: 400px;
+      width: 90vw;
       margin: 120px auto 0;
     }
 
@@ -1244,6 +1244,45 @@ padding: 0;
   max-width: 100%;
 }
 
+}
+
+
+@media screen and (max-width: 400px) {
+    .banner{
+      height: 250px;
+      width: 100%;
+    }
+
+    .index-icons{
+      margin: 100px 10%;
+      background-color: #ccdbd8;
+    }
+
+    .index-intro{
+      display: none;
+    }
+
+    .index-mobile{
+      display: block;
+      margin: 50px 20px 0;
+    }
+
+    .icons{
+      width: 90vw;
+      margin: 90px auto 0;
+    }
+
+    .about-icons{
+      margin: 90px auto 0;
+    }
+
+    .about{
+      margin: 155px 0 0;
+    }
+
+    .portfolio-display{
+      margin: 160px 10px 0;
+    }
 }
 
 
