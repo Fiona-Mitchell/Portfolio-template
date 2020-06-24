@@ -370,10 +370,13 @@ position: relative;
 }
 
 .home{
-  display: none;
-  background-image: url(../images/plain-background.jpg);
+  background-size: 100%;
+  position: absolute;
+  width: 100vw;
+  height: 800px;
+  z-index: -1;
+  background-color: #ccdbd8;
 }
-
 /* Columns
 ---------------------*/
 
@@ -1112,7 +1115,6 @@ footer{
 
     .index-icons{
       margin: 100px 10%;
-      background-color: #ccdbd8;
     }
 
     .index-intro{
@@ -1253,10 +1255,6 @@ padding: 0;
       width: 100%;
     }
 
-    .index-icons{
-      margin: 100px 10%;
-      background-color: #ccdbd8;
-    }
 
     .index-intro{
       display: none;
