@@ -272,7 +272,6 @@ position: relative;
 
 .column-index {
   flex: 25%;
-  max-width: 30%;
   padding: 0 4px;
 }
 
@@ -1279,7 +1278,7 @@ padding: 0;
     }
 
     .portfolio-display{
-      margin: 160px 10px 0;
+      margin: 150px 10px 0;
     }
 }
 
