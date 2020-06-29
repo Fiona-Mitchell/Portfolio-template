@@ -304,16 +304,6 @@ position: relative;
 
 .index-nav{
   opacity: 0;
-  animation: hi 3s forwards 1s;
-}
-
-@keyframes hi {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
 }
 
 .bounce{
