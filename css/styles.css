@@ -377,7 +377,6 @@ position: relative;
   width: 100vw;
   height: 800px;
   z-index: -1;
-  background-color: #ccdbd8;
 }
 /* Columns
 ---------------------*/
@@ -567,7 +566,6 @@ display: table;
 
 .index-icons{
   margin: 100px 20%;
-  background-color: #ccdbd8;
 }
 
 .about-icons{
