@@ -65,6 +65,7 @@ p{
   color: #284044;
 }
 
+
 a {
   color: #284044;
   text-decoration: none;
@@ -890,6 +891,7 @@ text-align: center;
 footer{
   padding: 20px 0;
   text-align: center;
+  background-color: #BDDCD5;
 }
 
   /* social media
@@ -1032,9 +1034,6 @@ footer{
       overflow-x: hidden;
     }
 
-.overflow{
-  overflow-x: hidden;
-}
     .nav-links{
       position: absolute;
       right:0;
@@ -1760,4 +1759,57 @@ p span{
     left: 46%;
   }
 
+}
+
+
+@media only screen and (min-width: 1250px){
+
+.overflow{
+  overflow-x: hidden;
+  padding: 0 50px;
+}
+h1{
+  font-size: 25px;
+}
+h2{
+  font-size: 15px;
+}
+h3{
+  font-size: 12px;
+}
+p{
+  font-size: 12px;
+}
+.index-intro{
+  width: 75%;
+  margin: 20vh auto;
+}
+}
+
+@media only screen and (min-width: 2000px){
+  .overflow{
+    overflow-x: hidden;
+    padding: 0 200px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .index-intro{
+    width: 70%;
+    margin: 25vh auto;
+  }
+
+  .scroll-down{
+    display: none;
+  }
 }
