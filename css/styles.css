@@ -556,6 +556,9 @@ display: table;
   height: 100px;
 }
 
+.mobile-view{
+  display: none;
+}
 /* Creative
 ---------------------*/
 .icons{
@@ -814,7 +817,7 @@ text-align: center;
   font-family: futura-pt-condensed, sans-serif;
   font-style: normal;
   color: #132123;
-  width: 150px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1159,6 +1162,14 @@ footer{
 
     .portfolio-display{
       margin: 270px 10px 0;
+    }
+
+    .desktop{
+      display: none;
+    }
+
+    .mobile-view{
+      display: block;
     }
 }
 
