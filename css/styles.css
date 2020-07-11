@@ -971,8 +971,8 @@ footer{
 	text-decoration: none;
   width: 25px;
   height: 25px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-bottom: 3px solid #BDDCD5;
+  border-right: 3px solid #BDDCD5;
   z-index: 3;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
