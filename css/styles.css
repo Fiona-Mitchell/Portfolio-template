@@ -1778,13 +1778,12 @@ p span{
 
 .overflow{
   overflow-x: hidden;
-  padding: 0 50px;
 }
 h1{
-  font-size: 25px;
+  font-size: 20px;
 }
 h2{
-  font-size: 15px;
+  font-size: 13px;
 }
 h3{
   font-size: 12px;
@@ -1801,7 +1800,6 @@ p{
 @media only screen and (min-width: 2000px){
   .overflow{
     overflow-x: hidden;
-    padding: 0 200px;
   }
 
   h1{
