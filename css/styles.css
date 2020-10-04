@@ -290,7 +290,7 @@ position: relative;
 }
 
 .index-intro{
-  width: 75%;
+  width: 85%;
   height: 500px;
   margin: 2vh auto;
 }
@@ -570,7 +570,7 @@ display: table;
 }
 
 .index-icons{
-  margin: 100px 20%;
+  margin: 100px 15%;
 }
 
 .about-icons{
@@ -1019,7 +1019,7 @@ footer{
   }
 
   .icons{
-    width: 90vw;
+    width: 80vw;
     margin: 150px auto 0;
   }
 
@@ -1079,7 +1079,7 @@ footer{
       display: block;
     }
 
-    .scroll{
+    .scroll-down{
       display: none;
     }
 
@@ -1152,7 +1152,7 @@ footer{
     }
 
     .icons{
-      width: 90vw;
+      width: 80vw;
       margin: 120px auto 0;
     }
 
@@ -1299,7 +1299,7 @@ padding: 0;
     }
 
     .icons{
-      width: 90vw;
+      width: 80vw;
       margin: 90px auto 0;
     }
 
@@ -1792,8 +1792,8 @@ p{
   font-size: 12px;
 }
 .index-intro{
-  width: 75%;
-  margin: 20vh auto;
+  width: 85%;
+  margin: 5vh auto;
 }
 }
 
@@ -1816,7 +1816,7 @@ p{
   }
   .index-intro{
     width: 70%;
-    margin: 25vh auto;
+    margin: 10vh auto;
   }
 
   .scroll-down{
