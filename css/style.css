@@ -342,6 +342,10 @@ footer{
   background-image: url("../images/darker-blue.png");
 }
 
+.footer-icons{
+  padding: 0 170px;
+}
+
   /* SVG animation
   ---------------------*/
 .logo{
@@ -390,14 +394,27 @@ footer{
     100% {fill: #284044;}
   }
 
+@media (max-width: 576px){
+  .container{
+        max-width: 100%;
+        padding: 0 20px;}
+}
+
 
   @media only screen and (max-width: 900px){
-
   .mobile{
     display: inline-block;
   }
 
   .desktop{
     display: none;
+  }
+
+  .footer-icons{
+    padding: 0;
+  }
+
+  .column-1, .column-2, .column-3, .column-3-5, .column-4, .column-5, .column-6, .column-multi, .column-icon, .column-ig, .column-portfolio{
+    width:100%;
   }
 }
